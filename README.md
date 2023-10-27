@@ -223,6 +223,81 @@ In summary, continuous delivery is a DevOps practice that helps teams release so
   
 ![Screenshot from 2023-10-27 12-21-05](https://github.com/Ankit6989/Devops/assets/114300894/28b2b785-6a04-4c84-8fd3-189c6b34d730)
 
+## VM SetUp:
+### Virtualisation:
+
+- Virtualisation is the process of creating a virtual representation of a physical resource, such as a server, storage device, or a network.
+- virtualization in a cloud environment offers a lot of benefits to users.
+
+- It enables multiple virtual computers to run on the same physical host computer, each on its own OS and applications.
+- It can improve efficiency, scalability, and flexibility of information technology(IT) resources, as well as reduce costs and environmental impact.
+- It enables cloud customers to access services over the internet, without having to manage or maintain the underlying physical infrastructure.
+- It also enables cloud customers to scale up or down their resources on demand, depending on their needs and requirements.
+
+ ***Cloud Providers Provide 3 types of virtualization***
+ - virtual machines
+ - virtual storage
+ - virtual networks
+
+### Virtual Machines:
+
+The situation changed with development of virtual machines. A virtual machine or VM is a software based emulation of a physical computer that can run different OS and applications.
+
+- Run on a Physical computer and each physical computer can run or host, multiple VMs.
+- Have their own virtual hardware, such as CPU, memory, disk, and network devices that are isolated from host system and other VMs.
+- Orginally virtual machines were primarily used in business scenarios. But today , the technology is also being regularly used in cloud.
+
+**Testing and Development**
+**Disaster recovery and backup**
+**Server consolidation**
+**Security and Isolation**
+
+
+
+
+
+
+
+### VM-Manually(LINUX)
+
+In this lecture, you've learned how to manually set up virtual machines using Oracle VM VirtualBox. Here's a recap of the steps:
+
+1. **Prerequisites for Windows**:
+   - Enable virtualization in your computer's BIOS.
+   - Ensure that Windows features like Hyper-V, Windows Subsystem for Linux, and Docker Desktop Virtual Machine platform are disabled.
+
+2. **Creating Virtual Machines**:
+   - Open Oracle VM VirtualBox from the Start menu.
+   - Click on "New" to create a new virtual machine.
+   - Give your VM a name, choose the type (Linux), and select the version (e.g., Red Hat 64-bit).
+   - Allocate RAM and CPU resources based on your system specifications.
+   - Create a virtual hard disk for the VM. You can specify the size (dynamically allocated is recommended).
+   - Review the settings and click "Finish" to create the VM.
+
+3. **Downloading Linux ISO**:
+   - Download the ISO file for your Linux distribution (e.g., Alma Linux, CentOS, or Ubuntu).
+
+4. **Configuring Virtual Machine Settings**:
+   - Attach the downloaded ISO to the virtual optical drive.
+   - Set up network settings, especially the bridged adapter, to ensure the VM connects to your router.
+
+5. **Starting the Installation**:
+   - Boot the VM, which will automatically boot from the attached ISO.
+   - Follow the installation process for the Linux distribution you've chosen. Customize settings as needed, like hostname, password, and software installation options.
+
+6. **Completing the Installation**:
+   - After installation, power off the VM.
+
+7. **Testing SSH Access**:
+   - Check the IP address of the VM, which is assigned by your router.
+   - Open a terminal or command prompt, and use the SSH command to connect to the VM using its IP address and the username and password you specified during the installation.
+   - Confirm successful SSH access to the VM.
+
+8. **Shutting Down the VM**:
+   - After testing, shut down the VM from within the VM itself or from the Oracle VM VirtualBox interface.
+
+This process allows you to manually set up virtual machines running CentOS and Ubuntu. In subsequent lectures, you'll learn how to automate this process to create and configure VMs more efficiently.
+
 
 
 
