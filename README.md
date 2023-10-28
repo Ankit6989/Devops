@@ -247,20 +247,38 @@ The situation changed with development of virtual machines. A virtual machine or
 - Have their own virtual hardware, such as CPU, memory, disk, and network devices that are isolated from host system and other VMs.
 - Orginally virtual machines were primarily used in business scenarios. But today , the technology is also being regularly used in cloud.
 
-**Testing and Development**
-**Disaster recovery and backup**
-**Server consolidation**
-**Security and Isolation**
+- **Testing and Development**
 
+- **Disaster recovery and backup**
 
+- **Server consolidation**
 
+- **Security and Isolation**
 
+#### How does virtual machine works:
 
+- Virtual machine work with help of virtualization software called a hypervisor.
+- The hypervisor manages and allocates the physical resources of the host computer, lke CPU, memory and storage to the virtual machines.
 
+### There are 2 main types of hypervisors:
+- **Type 1 Hypervisors(Bare Metal):** Runs directly on the host hardware. They provide the best performance since there are no additional layers between the VM and the hardware.
+Eg: Ctrix Hypervisor, Microsoft Hyper-V
 
+- **Type 2 Hypervisors:** Runs with in an OS as an Application. They are easier to install and use but provide slightly worse performance since all VM requests have to go through the host OS first.
+Eg: Vm Ware Workstation, Oracle Virtual Box
+
+- The hypervisor abstracts physical hardware and presents virtual hardware to the gurest VMs.
+- Thsi allow each VM to run as if it is its own dedicated physical computer.
+- The hypervisor schedules and manages the execution of Vms so they can share the host computers resources efficiently.
+
+ #### Main components of VM are:
+
+ - Virtual CPU
+ - virtual memory
+ - virtual disk
+ - virtual network adapter
+   
 ### VM-Manually(LINUX)
-
-In this lecture, you've learned how to manually set up virtual machines using Oracle VM VirtualBox. Here's a recap of the steps:
 
 1. **Prerequisites for Windows**:
    - Enable virtualization in your computer's BIOS.
@@ -297,6 +315,10 @@ In this lecture, you've learned how to manually set up virtual machines using Or
    - After testing, shut down the VM from within the VM itself or from the Oracle VM VirtualBox interface.
 
 This process allows you to manually set up virtual machines running CentOS and Ubuntu. In subsequent lectures, you'll learn how to automate this process to create and configure VMs more efficiently.
+
+### VM-Automatically(LINUX) Using VAGRANT:
+
+kali Linux does not work
 
 
 
