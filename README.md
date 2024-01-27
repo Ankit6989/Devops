@@ -209,6 +209,9 @@ In summary, continuous delivery is a DevOps practice that helps teams release so
 
    - **Use Cases:** Continuous Delivery is commonly used in situations where organizations want to have the flexibility to deploy new features, bug fixes, or updates to production at a pace that suits their business needs.
 
+![image](https://github.com/Ankit6989/Devops/assets/114300894/71dba70b-cb7f-46b1-9878-0155154876b8)
+
+
 2. **Continuous Deployment (CD):**
 
    - **Definition:** Continuous Deployment is an extension of Continuous Delivery. In Continuous Deployment, every code change that passes automated tests is automatically deployed to production without manual intervention.
